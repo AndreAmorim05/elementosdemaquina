@@ -21,6 +21,7 @@
 
 
     <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/image_selector.css">
     <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
 
@@ -72,22 +73,103 @@
 
 
     <h1>Concentrador de Tensao</h1>
-    <table style="width:100%">
+
+
+    <form name="theForm" class="theForm row col">
+
+        <div class="card">
+            <input type="checkbox" id="furo_tracao" name="Concentrador" value="" onClick="clearGroup(this);">
+            <label for="furo_tracao" class="selector">
+                <img src="../../img/furo_tracao.jpeg" alt="">
+            </label>
+        </div>
+
+        <div class="card">
+            <input type="checkbox" id="furo_torcao" name="Concentrador" value="" onClick="clearGroup(this);">
+            <label for="furo_torcao" class="selector">
+                <img src="../../img/furo_torcao.jpeg" alt="">
+            </label>
+        </div>
+
+        <div class="card">
+                <input type="checkbox" id="adocamento_tracao" name="Concentrador" value="" onClick="clearGroup(this);">
+                <label for="adocamento_tracao" class="selector">
+                    <img src="../../img/adocamento_tracao.jpeg" alt="">
+                </label>
+            </div>
+
+            <div class="card">
+                <input type="checkbox" id="adocamento_torcao" name="Concentrador" value="" onClick="clearGroup(this);">
+                <label for="adocamento_torcao" class="selector">
+                    <img src="../../img/adocamento_torcao.jpeg" alt="">
+                </label>
+            </div>
+
+            <div class="card">
+                <input type="checkbox" id="cilindro_tracao" name="Concentrador" value="" onClick="clearGroup(this);">
+                <label for="cilindro_tracao" class="selector">
+                    <img src="../../img/cilindro_tracao.jpeg" alt="">
+                </label>
+            </div>
+
+            <div class="card">
+                <input type="checkbox" id="cilindro_torcao" name="Concentrador" value="" onClick="clearGroup(this);">
+                <label for="cilindro_torcao" class="selector">
+                    <img src="../../img/cilindro_torcao.jpeg" alt="">
+                </label>
+            </div>
+    </form>
+
+    <br>
+    <br>
+
+    <div class="card-circle">
+        <input type="checkbox" id="cilindro_torcao" name="Concentrador" value="" onClick="clearGroup(this);">
+        <label for="cilindro_torcao" class="selector">
+            <img src="../../img/cilindro_torcao.jpeg" alt="">
+        </label>
+    </div>
+
+    <br>
+    <br>
+
+    <form class="foms col" action="index.html" method="post">
+      <input type="text" name="" value="">
+      <input type="text" name="" value="">
+      <input type="text" name="" value="">
+      <input type="text" name="" value="">
+      <input type="text" name="" value="">
+      <input type="text" name="" value="">
+      <br>
+      <input type="button" name="" value="Confirmar">
+    </form>
+
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non tellus iaculis, ornare mauris nec, volutpat lectus. Ut nec lorem nibh. Duis sit amet libero massa. Proin tristique lectus neque. Fusce eleifend orci nec ligula cursus, sit amet aliquam neque fringilla. Sed id interdum nulla. Vivamus malesuada et est quis tempus. Sed lobortis lacus id dictum venenatis. In vel mauris ac ligula varius finibus quis at elit. Mauris vulputate risus sed nulla pulvinar, et porttitor justo condimentum. In pretium porta fringilla.
+
+Nulla eget arcu venenatis, faucibus nibh id, imperdiet turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc egestas orci at interdum mattis. Curabitur mollis massa nunc, ut interdum ipsum vehicula ac. Quisque vestibulum eros a tellus congue varius. Aenean mollis sodales nisl nec convallis. In nulla erat, consequat eget vestibulum eu, euismod ut arcu. Nunc luctus massa quis aliquet egestas. Donec quis semper eros, at imperdiet felis. Etiam maximus, nisi ac ullamcorper facilisis, magna quam vehicula justo, vitae dictum sapien diam ac erat. Quisque et elit at ante fermentum dapibus at a sapien. Mauris eget justo nibh.
+
+Donec massa sapien, dictum sed cursus sit amet, gravida nec nulla. Praesent maximus arcu ut dignissim vulputate. Aliquam ante felis, laoreet in elementum id, vestibulum sed justo. Nunc leo lorem, feugiat non eros a, volutpat condimentum nunc. Duis iaculis venenatis magna ac tempus. Nam malesuada, eros vitae viverra sodales, nibh augue sollicitudin arcu, vel pharetra enim orci vel nisi. Donec eu varius nibh, quis pretium tortor. Nunc ultrices ac lorem a elementum. Nam nec lacinia felis. Nulla euismod non justo nec mollis. Cras faucibus blandit dui. Quisque in ornare quam. Vivamus eu tincidunt erat, quis feugiat mauris. Etiam facilisis malesuada urna. Aenean semper iaculis erat, sed ultrices ex semper nec. Nunc bibendum convallis justo, a euismod sapien.
+
+Mauris interdum porta est ac consectetur. Sed congue congue euismod. Praesent et neque sem. Maecenas imperdiet suscipit velit, nec sollicitudin augue elementum volutpat. Quisque venenatis, augue sit amet fermentum viverra, lectus libero eleifend leo, quis pretium justo urna sit amet mi. Cras sed accumsan dolor. Mauris vel viverra purus. Aliquam blandit arcu quam, a commodo ligula vehicula sit amet. Phasellus eu arcu libero. Etiam efficitur tincidunt nisl, a pellentesque enim suscipit vitae. Vivamus felis odio, consectetur eget pharetra sed, semper et felis. Aenean non arcu vel libero scelerisque ornare tincidunt id erat. Pellentesque suscipit pharetra varius. In hac habitasse platea dictumst. In luctus imperdiet erat, nec cursus velit convallis eu.
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam id viverra nunc. Morbi ante sem, elementum sit amet varius eu, facilisis elementum lacus. Nullam sodales, diam sed cursus dignissim, turpis neque congue enim, nec euismod nulla tellus non arcu. Fusce non interdum lorem, non pellentesque arcu. Donec mattis vitae ex sed fringilla. Cras sit amet mauris molestie, aliquam augue eu, semper felis. Vestibulum arcu eros, lacinia accumsan mattis a, porttitor eget risus. Nam fringilla turpis ut ipsum laoreet hendrerit.
+    </p>
+    <!-- <table style="width:100%">
         <tr>
             <th><form method="POST" action="/calculadoras/concentrador_de_tensao" class='w-50'>
                 {% csrf_token %}
                 {{form|crispy}}
                 <button type="submit" class="btn btn-primary" name='calcular'>Calcular</button>
             </form></th>
-            {% if valor %}
                 <th><div class="alert alert-success" role="alert">
                     <h4 class="alert-heading">Valor calculado!</h4>
                     <p>O resultado é: {{valor}}</p>
                     <hr>
                     <p class="mb-0"></p>
                 </div></th>
-            
-            {% else %}
+
                 <th>
                     <div class="alert alert-success" role="alert">
                         <h4 class="alert-heading">Quadro de valores</h4>
@@ -97,13 +179,21 @@
                     </div>
                 </th>
 
-            {% endif %}
         </tr>
-    </table>
+    </table> -->
     <br>
 
-    
-    
+
+<script>
+  function clearGroup(elem) {
+      var group = document.theForm.Concentrador;
+      for (var i=0; i<group.length; i++) {
+          if (group[i] != elem) {
+              group[i].checked = false;
+          }
+      }
+  }
+</script>
 </body>
 
 </html>
