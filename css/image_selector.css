@@ -11,6 +11,162 @@ body{
     min-height: 100vh;
     background: #000;
 }
+
+ul#images {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+.test {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+ul#images li {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    -webkit-transition: all .3s ease-in;
+}
+
+ul#images li:hover {
+    -webkit-transform: scale(1.5);
+}
+
+ul#images li#image01 {
+    background: url('../img/adocamento_flexao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 180px 180px;
+    background-color: #ffffff;
+}
+ul#images li#image01:hover {
+    /*background-position: 0px 0px;
+    background-size: 200px 200px;*/
+    width: 200px;
+    height: 150px;
+    border-radius: 5%;    
+}
+
+ul#images li#image02 {
+    background: url('../img/adocamento_tracao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 180px 180px;
+    background-color: #ffffff;
+}
+ul#images li#image02:hover {
+    /*background-position: 0px 0px;
+    background-size: 200px 200px;*/
+    width: 200px;
+    height: 150px;
+    border-radius: 5%; 
+}
+
+ul#images li#image03 {
+    background: url('../img/cilindro_flexao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 180px 180px;
+    background-color: #ffffff;
+}
+ul#images li#image03:hover {
+    /*background-position: 0px 0px;
+    background-size: 200px 200px;*/
+    width: 200px;
+    height: 150px;
+    border-radius: 5%; 
+}
+
+ul#images li#image04 {
+    background: url('../img/cilindro_torcao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 180px 180px;
+    background-color: #ffffff;
+}
+ul#images li#image04:hover {
+    /*background-position: 0px 0px;
+    background-size: 200px 200px;*/
+    width: 200px;
+    height: 150px;
+    border-radius: 5%; 
+}
+
+ul#images li#image05 {
+    background: url('../img/cilindro_tracao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 180px 180px;
+    background-color: #ffffff;
+}
+ul#images li#image05:hover {
+    /*background-position: 0px 0px;
+    background-size: 200px 200px;*/
+    width: 200px;
+    height: 150px;
+    border-radius: 5%; 
+}
+
+ul#images li#image06 {
+    background: url('../img/furo_flexao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 180px 180px;
+    background-color: #ffffff;
+}
+ul#images li#image06:hover {
+    /*background-position: 0px 0px;
+    background-size: 200px 200px;*/
+    width: 200px;
+    height: 150px;
+    border-radius: 5%; 
+}
+
+ul#images li#image07 {
+    background: url('../img/furo_tracao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 180px 180px;
+    background-color: #ffffff;
+}
+ul#images li#image07:hover {
+    /*background-position: 0px 0px;
+    background-size: 200px 200px;*/
+    width: 200px;
+    height: 150px;
+    border-radius: 5%; 
+}
+
+ul#images li#image08 {
+    background: url('../img/rasgo_flexao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 180px 180px;
+    background-color: #ffffff;
+}
+ul#images li#image08:hover {
+    /*background-position: 0px 0px;
+    background-size: 200px 200px;*/
+    width: 200px;
+    height: 150px;
+    border-radius: 5%; 
+}
+
+ul#images li#image09 {
+    background: url('../img/rasgo_tracao.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 180px 180px;
+    background-color: #ffffff;
+}
+ul#images li#image09:hover {
+    /*background-position: 0px 0px;
+    background-size: 200px 200px;*/
+    width: 200px;
+    height: 150px;
+    border-radius: 5%; 
+}
+
+/*
 .card{
     position: relative;
     max-width: 150px;
@@ -44,7 +200,7 @@ body{
 .card input:checked ~ .card img{
     filter: grayscale(100%);
 }
-
+*/
 
 
 
