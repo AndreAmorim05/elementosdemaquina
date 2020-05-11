@@ -19,6 +19,11 @@ ul#images {
     overflow: hidden;
     list-style: none;
 }
+/*oculta o checkbox*/
+input#furo_tracao {
+    display: none;
+}
+/*deixa as imagens redondas*/
 .test {
     width: 150px;
     height: 150px;
@@ -36,8 +41,23 @@ ul#images li {
     -webkit-transition: all .3s ease-in;
 }
 
+ul#images li span {
+    text-align: center;
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9pt;
+   /* line-height: 370px;*/
+    padding: 5px 50px 5px 5px;
+}
+
 ul#images li:hover {
     -webkit-transform: scale(1.5);
+}
+
+ul#images li:hover span {
+    opacity: 1;
 }
 
 ul#images li#image01 {
