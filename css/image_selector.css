@@ -12,6 +12,11 @@ body{
     background: #000;
 }
 
+div.header h2.logo {
+    position: absolute;
+    top: 240px;
+    color: #ffffff;
+}
 ul#images {
     width: 700px;
     margin: 0 auto;
