@@ -8,7 +8,12 @@ header#banner {
   height: 200px;
   background-color: #ffffff;
   position: relative;
-  top: 0px;
+  top: auto;
+}
+
+header#banner h1 {
+  position: relative;
+  top: 80px;
 }
 
 /*Formatação menu*/
@@ -16,11 +21,18 @@ nav#menu {
   display: block;
   text-transform: uppercase;
 	position: absolute;
-	top: 230px;
+  padding-top: 15px;
 	left: 500px;
 }
 
-
+div#navbar {
+  width: 1349px;
+  height: 50px;
+  background-color:lightgreen;
+  position: relative;
+  top: 165px;
+  box-shadow: 3px -2px 5px rgba(0, 0, 0, .3);
+}
 /**{
   margin: 0;
   padding: 0;
