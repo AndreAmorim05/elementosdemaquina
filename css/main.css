@@ -1,4 +1,27 @@
-*{
+@charset "UTF-8";
+
+/*Formatação do banner*/
+header#banner {
+  color: #000000;
+  float: left;
+  width: 1349px;
+  height: 200px;
+  background-color: #ffffff;
+  position: relative;
+  top: 0px;
+}
+
+/*Formatação menu*/
+nav#menu {
+  display: block;
+  text-transform: uppercase;
+	position: absolute;
+	top: 230px;
+	left: 500px;
+}
+
+
+/**{
   margin: 0;
   padding: 0;
   font-family: "montserrat",sans-serif;
@@ -99,4 +122,4 @@
     padding: 0px;
     width: 100%;
     height: 40vh;
-}
+}*/

@@ -9,7 +9,7 @@ body{
     /* justify-content: center; */
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    background: rgba(0, 140, 255, .5);
 }
 
 div.header h2.logo {
