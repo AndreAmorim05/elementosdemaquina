@@ -1,16 +1,4 @@
-/* *{
-    width: 100%
-} */
-
-body{
-    margin: 0;
-    padding: 0;
-    /* display: flex; */
-    /* justify-content: center; */
-    align-items: center;
-    min-height: 100vh;
-    background: rgba(0, 140, 255, .5);
-}
+@charset "UTF-8";
 
 div.header h2.logo {
     position: absolute;
@@ -18,7 +6,7 @@ div.header h2.logo {
     color: #ffffff;
 }
 ul#images {
-    width: 700px;
+   /* width: 700px;*/
     margin: 0 auto;
     padding: 50px;
     overflow: hidden;

@@ -27,6 +27,8 @@
             <a href="/about">Sobre</a>
         </nav>
     </div>
+
+    <section id="lado-esquerdo">
     <!--
     <div class="header">
         <a href="#">
@@ -127,66 +129,22 @@
                 </label>
             </li>
         </ul>
-        <!--
-        <div class="card">
-            <input type="checkbox" id="furo_tracao" name="Concentrador" value="" onClick="clearGroup(this);">
-            <label for="furo_tracao" class="selector">
-                <img src="../../img/furo_tracao.jpeg" alt="">
-            </label>
-        </div>
-
-        <div class="card">
-            <input type="checkbox" id="furo_torcao" name="Concentrador" value="" onClick="clearGroup(this);">
-            <label for="furo_torcao" class="selector">
-                <img src="../../img/furo_torcao.jpeg" alt="">
-            </label>
-        </div>
-
-        <div class="card">
-                <input type="checkbox" id="adocamento_tracao" name="Concentrador" value="" onClick="clearGroup(this);">
-                <label for="adocamento_tracao" class="selector">
-                    <img src="../../img/adocamento_tracao.jpeg" alt="">
-                </label>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="adocamento_torcao" name="Concentrador" value="" onClick="clearGroup(this);">
-                <label for="adocamento_torcao" class="selector">
-                    <img src="../../img/adocamento_torcao.jpeg" alt="">
-                </label>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="cilindro_tracao" name="Concentrador" value="" onClick="clearGroup(this);">
-                <label for="cilindro_tracao" class="selector">
-                    <img src="../../img/cilindro_tracao.jpeg" alt="">
-                </label>
-            </div>
-
-            <div class="card">
-                <input type="checkbox" id="cilindro_torcao" name="Concentrador" value="" onClick="clearGroup(this);">
-                <label for="cilindro_torcao" class="selector">
-                    <img src="../../img/cilindro_torcao.jpeg" alt="">
-                </label>
-            </div>
-            -->
     </form>
-
-    <br>
-    <br>
-
-    <form class="foms col" action="index.html" method="post">
-      <input type="text" name="" value="">
-      <input type="text" name="" value="">
-      <input type="text" name="" value="">
-      <input type="text" name="" value="">
-      <input type="text" name="" value="">
-      <input type="text" name="" value="">
-      <br>
-      <input type="button" name="" value="Confirmar">
-    </form>
-
-
+    </section>
+  
+    <aside id="central">
+        <form class="formulario-imagens" action="index.html" method="post">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <br>
+            <input type="button" name="" value="Confirmar">
+        </form>
+    </aside>
+<!--
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non tellus iaculis, ornare mauris nec, volutpat lectus. Ut nec lorem nibh. Duis sit amet libero massa. Proin tristique lectus neque. Fusce eleifend orci nec ligula cursus, sit amet aliquam neque fringilla. Sed id interdum nulla. Vivamus malesuada et est quis tempus. Sed lobortis lacus id dictum venenatis. In vel mauris ac ligula varius finibus quis at elit. Mauris vulputate risus sed nulla pulvinar, et porttitor justo condimentum. In pretium porta fringilla.
 
@@ -197,32 +155,7 @@ Donec massa sapien, dictum sed cursus sit amet, gravida nec nulla. Praesent maxi
 Mauris interdum porta est ac consectetur. Sed congue congue euismod. Praesent et neque sem. Maecenas imperdiet suscipit velit, nec sollicitudin augue elementum volutpat. Quisque venenatis, augue sit amet fermentum viverra, lectus libero eleifend leo, quis pretium justo urna sit amet mi. Cras sed accumsan dolor. Mauris vel viverra purus. Aliquam blandit arcu quam, a commodo ligula vehicula sit amet. Phasellus eu arcu libero. Etiam efficitur tincidunt nisl, a pellentesque enim suscipit vitae. Vivamus felis odio, consectetur eget pharetra sed, semper et felis. Aenean non arcu vel libero scelerisque ornare tincidunt id erat. Pellentesque suscipit pharetra varius. In hac habitasse platea dictumst. In luctus imperdiet erat, nec cursus velit convallis eu.
 
 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam id viverra nunc. Morbi ante sem, elementum sit amet varius eu, facilisis elementum lacus. Nullam sodales, diam sed cursus dignissim, turpis neque congue enim, nec euismod nulla tellus non arcu. Fusce non interdum lorem, non pellentesque arcu. Donec mattis vitae ex sed fringilla. Cras sit amet mauris molestie, aliquam augue eu, semper felis. Vestibulum arcu eros, lacinia accumsan mattis a, porttitor eget risus. Nam fringilla turpis ut ipsum laoreet hendrerit.
-    </p>
-    <!-- <table style="width:100%">
-        <tr>
-            <th><form method="POST" action="/calculadoras/concentrador_de_tensao" class='w-50'>
-                {% csrf_token %}
-                {{form|crispy}}
-                <button type="submit" class="btn btn-primary" name='calcular'>Calcular</button>
-            </form></th>
-                <th><div class="alert alert-success" role="alert">
-                    <h4 class="alert-heading">Valor calculado!</h4>
-                    <p>O resultado é: {{valor}}</p>
-                    <hr>
-                    <p class="mb-0"></p>
-                </div></th>
-
-                <th>
-                    <div class="alert alert-success" role="alert">
-                        <h4 class="alert-heading">Quadro de valores</h4>
-                        <p>Aqui você obterá os valores assim que algum cálculo for realizado</p>
-                        <hr>
-                        <p class="mb-0"></p>
-                    </div>
-                </th>
-
-        </tr>
-    </table> -->
+    </p>    
     <br>
 
 
@@ -235,7 +168,10 @@ Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculu
           }
       }
   }
-</script>
+</script> -->
+    <footer id="rodape">
+        <p>Copyright &copy; 2020 - by J.C.A.M TechSolutions<br>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://twitter.com/login?lang=pt" target="_blank">Twitter</a> </p>
+    </footer>
 </body>
-
 </html>

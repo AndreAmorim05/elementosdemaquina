@@ -6,14 +6,17 @@ header#banner {
   float: left;
   width: 1349px;
   height: 200px;
-  background-color: #ffffff;
+  background-color: #6ef7eb;
   position: relative;
-  top: auto;
+  top: -8px;
+  left: -8px;
 }
 
+/*Formatação do tipo de calculadora*/
 header#banner h1 {
   position: relative;
-  top: 80px;
+  top: 90px;
+  left: 10px;
 }
 
 /*Formatação menu*/
@@ -31,8 +34,49 @@ div#navbar {
   background-color:lightgreen;
   position: relative;
   top: 165px;
+  left: -8px;
   box-shadow: 3px -2px 5px rgba(0, 0, 0, .3);
 }
+
+/*Formatação do conteudo principal(lateral esquerda)*/
+section#lado-esquerdo {
+  display: block;
+	width: 700px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+/*Formataçao conteudo central*/
+aside#central {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 600px;
+	/*float: left;*/
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+  box-shadow: 4px 4px 3px rgba(0,0,0,.5);
+  top: 155px;
+  left: 720px;
+}
+
+form.formulario-imagens {
+  position: absolute;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+	text-align: center;
+}
+
+
+
 /**{
   margin: 0;
   padding: 0;
