@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/concentrators/style.css') }}">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Calculadora de Concentradores de Tensão</title>
+</head>
+<body>
+    <section class="side-menu">
+        <ul>
+            <li><a href="">Posts</a></li>
+            <li><a href="">Calculadoras</a></li>
+            <li><a href="">Material de Apoio</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Outros</a></li>
+        </ul>
+    </section>
+
+    <section class="content-block">
+        <div class="content-body">
+            <div class="main-tab">
+                <input checked="checked" id="tab1" type="radio" name="mtab">
+                <input id="tab2" type="radio" name="mtab">
+                <nav>
+                    <ul>
+                        <li class="tab1">
+                            <label for="tab1">Placas</label>
+                        </li>
+                        <li class="tab2">
+                            <label for="tab2">Eixos</label>
+                        </li>
+                    </ul>
+                </nav>
+                <section id="selectSection">
+                    <div class="tab1">
+                        <input type="radio" name="concentrators" id="plano_furo_tracao" value="plano_furo_tracao"
+                            onClick="selectInputs(['d_plane', 'w_plane']); set_concentrator(this)">
+                        plano_furo_tracao
+                        </input><br>
+                        <input type="radio" name="concentrators" id="plano_furo_flexao" value="plano_furo_flexao"
+                            onclick="selectInputs(['d_plane', 'w_plane', 'h_plane']); set_concentrator(this)">
+                        plano_furo_flexao
+                        </input><br>
+                        <input type="radio" name="concentrators" id="plano_entalhe_tracao" value="plano_entalhe_tracao"
+                            onclick="selectInputs(['d_plane', 'w_plane', 'r_plane']); set_concentrator(this)">
+                        plano_entalhe_tracao </input><br>
+                        <input type="radio" name="concentrators" id="plano_entalhe_flexao" value="plano_entalhe_flexao"
+                            onclick="selectInputs(['d_plane', 'w_plane', 'r_plane']); set_concentrator(this)">
+                        plano_entalhe_flexao </input><br>
+                        <input type="radio" name="concentrators" id="plano_filete_tracao" value="plano_filete_tracao"
+                            onclick="selectInputs(['d_plane', 'D_plane', 'r_plane']); set_concentrator(this)">
+                        plano_filete_tracao </input><br>
+                        <input type="radio" name="concentrators" id="plano_filete_flexao" value="plano_filete_flexao"
+                            onclick="selectInputs(['d_plane', 'D_plane', 'r_plane']); set_concentrator(this)">
+                        plano_filete_flexao </input><br>
+                    </div>
+
+                    <div class="tab2">
+                        <input type="radio" name="concentrators" id="eixo_filete_tracao" value="eixo_filete_tracao"
+                            onclick="selectInputs(['d_shaft', 'D_shaft', 'r_shaft'])">
+                        eixo_filete_tracao
+                        </input><br>
+                        <input type="radio" name="concentrators" id="eixo_filete_torcao" value="eixo_filete_torcao"
+                            onclick="selectInputs(['d_shaft', 'D_shaft', 'r_shaft'])">
+                        eixo_filete_torcao
+                        </input><br>
+                        <input type="radio" name="concentrators" id="eixo_filete_flexao" value="eixo_filete_flexao"
+                            onclick="selectInputs(['d_shaft', 'D_shaft', 'r_shaft'])">
+                        eixo_filete_flexao
+                        </input><br>
+                        <input type="radio" name="concentrators" id="eixo_furo_torcao" value="eixo_furo_torcao"
+                            onclick="selectInputs(['d_shaft', 'D_shaft', 'r_shaft'])">
+                        eixo_furo_torcao
+                        </input><br>
+                        <input type="radio" name="concentrators" id="eixo_furo_flexao" value="eixo_furo_flexao"
+                            onclick="selectInputs(['d_shaft', 'D_shaft', 'r_shaft'])">
+                        eixo_furo_flexao
+                        </input><br>
+                        <input type="radio" name="concentrators" id="eixo_sulco_tracao" value="eixo_sulco_tracao"
+                            onclick="selectInputs(['d_shaft', 'D_shaft', 'r_shaft'])">
+                        eixo_sulco_tracao
+                        </input><br>
+                        <input type="radio" name="concentrators" id="eixo_sulco_flexao" value="eixo_sulco_flexao"
+                            onclick="selectInputs(['d_shaft', 'D_shaft', 'r_shaft'])">
+                        eixo_sulco_flexao
+                        </input><br>
+                        <input type="radio" name="concentrators" id="eixo_sulco_torcao" value="eixo_sulco_torcao"
+                            onclick="selectInputs(['d_shaft', 'D_shaft', 'r_shaft'])">
+                        eixo_sulco_torcao
+                        </input><br>
+                    </div>
+                </section>
+            </div>
+
+
+            <section class="data">
+              <h3>Digite os valores a seguir</h3>
+                <div class="data-plane">
+                    <div class="d_plane">
+                        <label for="d_plane"> d </label>
+                        <input type="text" name="d_plane" id="d_plane"></input>
+                    </div>
+                    <div class="D_plane">
+                        <label for="D_plane"> D </label>
+                        <input type="text" name="D_plane" id="D_plane"></input>
+                    </div>
+                    <div class="h_plane">
+                        <label for="h_plane"> h </label>
+                        <input type="text" name="h_plane" id="h_plane"></input>
+                    </div>
+                    <div class="w_plane">
+                        <label for="w_plane"> w </label>
+                        <input type="text" name="w_plane" id="w_plane"></input>
+                    </div>
+                    <div class="r_plane">
+                        <label for="r_plane"> r </label>
+                        <input type="text" name="r_plane" id="r_plane"></input>
+                    </div>
+                </div>
+
+                <div class="data-shaft">
+                    <div class="d_shaft">
+                        <label for="d_shaft"> d </label>
+                        <input type="text" name="d_shaft" id="d_shaft"></input>
+                    </div>
+                    <div class="D_shaft">
+                        <label for="D_shaft"> D </label>
+                        <input type="text" name="D_shaft" id="D_shaft"></input>
+                    </div>
+                    <div class="r_shaft">
+                        <label for="r_shaft"> r </label>
+                        <input type="text" name="r_shaft" id="r_shaft"></input>
+                    </div>
+                </div>
+                <button type="submit" name="submit_button">Calcular</button>
+            </section>
+
+        </form>
+            <div class="grafico">
+              <h3><center>Aqui ficará um gráfico</center></h3>
+            </div>
+
+              <div class="result">
+                {% if result %}
+                  {{result}}
+                {% endif %}
+              </div>
+            </div>
+        </section>
+    <script src="../js/select_inputs.js" charset="utf-8"></script>
+</body>
+
+</html>

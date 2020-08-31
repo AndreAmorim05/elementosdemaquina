@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+.side-menu{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background-color: blueviolet;
+}
+.side-menu ul{
+  padding-left: 15%;
+  padding-top: 15%;
+}
+.side-menu li{
+  text-decoration: none;
+}
+.content-block{
+    grid-column: 2/11;
+    grid-row: 1/5;
+    background-color: blanchedalmond;
+}
+.content-body{
+    height: 100%;
+    display: grid;
+    grid-template-areas: "tabs tabs inputs" "grafico grafico resultado";
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 50% 50%;
+}
+.main-tab{
+  grid-area: tabs;
+  background-color: #444;
+ }
+.data{
+  grid-area: inputs;
+  background-color: #fff;
+}
+.grafico{
+  grid-area: grafico;
+  background-color: #1f4579;
+}
+.result{
+  grid-area: resultado;
+  background-color: yellow;
+}
+
+
+
+
+
+
+.main-tab > input,
+.main-tab section > div {
+    display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2{
+    display: block;
+}
+*, *:after, *:before{
+  box-sizing: border-box;
+}
+.main-tab{
+  width: 100%;
+  /* max-width: 300px; */
+/*   margin: 0 auto; */
+}
+.main-tab ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.main-tab ul li label{
+  float: left;
+  padding: 15px 25px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  background-color: #eeeeee;
+  color: #444;
+}
+.main-tab ul li label:hover{
+  background-color: #ddd;
+}
+.main-tab ul li laber:active{
+  background-color: #fff;
+}
+.main-tab ul li:not(:last-child) label{
+  border-right-width: 0px;
+}
+.main-tab section{
+  clear: both;
+}
+.main-tab section div{
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #444;
+}
+#tab1:checked ~ nav .tab1 label,
+#tab2:checked ~ nav .tab2 label{
+  background-color: #fff;
+  color: #111;
+  position: relative;
+}
+h1{
+    color: rgb(74, 119, 119);
+}
+
+.data-plane > div,
+.data-shaft > div{
+  display: none;
+}
+.data{
+  width: 100%;
+  border: 1px solid #ddd;
+  color: #444;
+  /* display: flex; */
+}
+.data-plane,
+.data-shaft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  padding: 0px;
+}
+.data-plane input,
+.data-shaft input{
+  max-width: 70px;
+}
